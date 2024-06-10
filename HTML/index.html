@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/index.css">
+  <title>Snake and Ladder Game</title>
+</head>
+<body onload="createBoard()">
+  <div class="container">
+    <div id="top-heading">
+      <h2 >Snake and Ladder</h2>
+    </div>
+    <div id="players-info">
+      <div id="Player-1-stats" class="Player-stats">
+        <h3>Player 1</h3>
+        <p>Position:  <span class="position-stats">0</span></p>
+        <p>Dice:  <span class="dice-stats"></span></p>
+      </div>
+      <div id="Player-2-stats" class="Player-stats">
+        <h3>Player 2</h3>
+        <p>Position: <span class="position-stats">0</span></p>
+        <p>Dice :  <span class="dice-stats"></span></p>
+      </div>
+      
+    </div>
+    <div class="main-board"></div>
+  </div>
+  <div class="dice-container">
+    <img src="../assessts/dice6.png" id="dice-id" alt="Dice">
+    <button onclick="roll()">Roll Dice</button>
+  </div>
+  <div class="piece-pos">
+    <div class="player_pieces">
+      <div id="player_piece_1" class="player_piece">
+        <img src="../assessts/goti-1.png" class="goti" alt="">
+      </div>
+      <div id="player_piece_2" class="player_piece">
+        <img src="../assessts/goti-2.png" class="goti" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="../JS/index.js"></script>
+</body>
+</html>
